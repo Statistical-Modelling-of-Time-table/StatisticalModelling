@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="default" extends="tiles-default,json-default"
+		namespace="/">
+		
+		<action name="Start_page" class="edu.iiitb.action.StartAction">
+			<result name="success" type="tiles">Start</result>
+		</action>
+		
+		<action name="Create_DB" class="edu.iiitb.action.StartAction">
+			<result name="success" type="tiles">CreateDatabase</result>
+		</action>
+		
+		<action name="Create_Train_Station" class="edu.iiitb.action.CreateDatabase">
+			<result name="success" type="tiles">CreateDatabase</result>
+		</action>
+		
+		<action name="Query" class="edu.iiitb.action.StartAction">
+			<result name="success" type="tiles">Query_processing</result>
+		</action>
+		
+	</package>
+</struts>

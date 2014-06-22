@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+   
+   <tiles-definitions>
+   			
+   		<definition name="Start" template="/TilePage.jsp">
+   			<put-attribute name="title" value="Statistical Modeling of Timetable"/>
+   			<put-attribute name="header" value="/header.jsp"/>
+   			<put-attribute name="menu"   value="/menu.jsp"/>
+		    <put-attribute name="body"   value="/body.jsp"/>
+		    <put-attribute name="footer"   value="/footer.jsp"/>
+   		</definition>
+   		
+   		<definition name="CreateDatabase" extends="Start">
+   			<put-attribute name="title" value="Create Database"/>
+   			<put-attribute name="body" value="/bodyCreateDB.jsp"/>
+   		</definition>
+   		
+   		<definition name="Query_processing" extends="Start">
+   			<put-attribute name="title" value="Query Interface"/>
+   			<put-attribute name="body" value="/bodyQuery.jsp"/>
+   		</definition>
+   		
+   </tiles-definitions>
